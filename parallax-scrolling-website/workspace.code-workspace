@@ -1,0 +1,35 @@
+{
+  "folders": [],
+  "settings": {
+    "git.ignoreLimitWarning": true,
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.default.systemIncludePath": [],
+    "C_Cpp.default.includePath": ["C_Cpp.default.includePath"],
+    "C_Cpp.default.forcedInclude": []
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "(gdb) Запустить",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "Введите имя программы, например: ${workspaceFolder}/a.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/path/to/gdb",
+        "setupCommands": [
+          {
+            "description": "Включить автоматическое форматирование для gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }
+}

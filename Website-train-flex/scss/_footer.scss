@@ -1,0 +1,14 @@
+.footer {
+  background-color: rgb(255, 94, 46);
+}
+.footer__row {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}

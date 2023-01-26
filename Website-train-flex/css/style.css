@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+} /* для удобности отступов, и включение границы в ширину блока. А margin в себя ширина не включает. */
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*----------------------------*/
+.hi {
+  background: rgb(134, 28, 28) url("../img/background/redspace.jpg") no-repeat;
+  background-size: 100% 200%;
+  padding: 50px 0px;
+}
+
+.hi__row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hi__body {
+  color: aliceblue;
+  padding: 0px 30px 0px 0px;
+}
+
+.hi__title {
+  text-shadow: 1px 1px 0 black;
+  font-size: 60px;
+  margin: 0px 0px 38px 0px;
+}
+
+.hi__list li {
+  background: url("../img/icons/icon-mark.png") 0 1px no-repeat;
+  text-shadow: 1px 1px 0 black;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 0px 0px 0px 36px;
+  margin: 0px 0px 15px 0px;
+}
+
+.what {
+  padding: 50px 0px;
+}
+
+.what__row {
+  display: flex;
+}
+
+.what__image img {
+  max-width: 100%;
+}
+
+.what__image {
+  flex: 0 0 430px;
+}
+
+.what__body {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 38px;
+}
+
+.what__title {
+  margin: 0px 0px 33px 0px;
+}
+
+.what__text p {
+  margin: 0px 0px 25px 0px;
+  color: rgb(160, 75, 75);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.columns {
+  background-color: antiquewhite;
+  padding: 50px 0px 20px 0px;
+}
+
+.columns__title {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.columns__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -8px;
+}
+
+.columns__column {
+  padding: 0px 8px;
+  flex: 0 1 50%;
+  margin: 0px 0px 30px 0px;
+}
+
+.item__row {
+  display: flex;
+}
+
+.item_image {
+  flex: 0 0 200px;
+}
+
+.item__body {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 15px;
+}
+
+.item__title {
+  color: rgb(252, 80, 0);
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0px 0px 13px 0px;
+}
+
+.item__text {
+  color: rgb(160, 75, 75);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vertical {
+  padding: 50px 0px;
+}
+
+.vertical__title {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.vertical__body {
+  max-width: 990px;
+  margin: 0px auto;
+}
+
+.vertical__row {
+  display: flex;
+  margin: 0px -22.5px;
+}
+
+.vertical__column {
+  flex: 0 1 33.3333%;
+  padding: 0px 22.5px;
+  display: flex;
+}
+
+.vertical__item {
+  background: rgb(134, 28, 28) url("../img/background/bright-red-cosmic-background-with-nebula-stardust.jpg") no-repeat;
+  color: darkorange;
+  padding: 0px 0px 20px 0px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical__subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.vertical__label {
+  text-align: center;
+  text-shadow: 1px 1px 0 rgb(250, 204, 0);
+  padding: 15px 0px;
+  font-size: 30px;
+}
+
+.vertical__text {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  flex: 1 1 auto;
+}
+
+.vertical__text p {
+  margin: 0px 0px 15px 0px;
+}
+
+.vertical__text p:last-child {
+  margin: 0px;
+}
+
+.vertical__btn {
+  display: block;
+  margin: 0px 20px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(252, 224, 99);
+}
+
+.vertical__btn:hover {
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 2px;
+}
+
+.footer {
+  background-color: rgb(255, 94, 46);
+}
+
+.footer__row {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.title {
+  color: rgb(252, 80, 0);
+  font-size: 30px;
+  line-height: 36px;
+}

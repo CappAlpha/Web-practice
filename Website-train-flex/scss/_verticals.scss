@@ -1,0 +1,80 @@
+.vertical {
+  padding: 50px 0px;
+}
+
+.vertical__title {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.vertical__body {
+  max-width: 990px;
+  margin: 0px auto;
+}
+
+.vertical__row {
+  display: flex;
+  margin: 0px -22.5px;
+}
+
+.vertical__column {
+  flex: 0 1 33.3333%;
+  padding: 0px 22.5px;
+  display: flex;
+}
+
+.vertical__item {
+  background: rgb(134, 28, 28)
+    url('../img/background/bright-red-cosmic-background-with-nebula-stardust.jpg')
+    no-repeat;
+  color: darkorange;
+  padding: 0px 0px 20px 0px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical__subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.vertical__label {
+  text-align: center;
+  text-shadow: 1px 1px 0 rgb(250, 204, 0);
+  padding: 15px 0px;
+  font-size: 30px;
+}
+
+.vertical__text {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  flex: 1 1 auto;
+}
+
+.vertical__text p {
+  margin: 0px 0px 15px 0px;
+}
+
+.vertical__text p:last-child {
+  margin: 0px;
+}
+
+.vertical__btn {
+  display: block;
+  margin: 0px 20px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(252, 224, 99);
+}
+
+.vertical__btn:hover {
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 2px;
+}
