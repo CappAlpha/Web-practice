@@ -1,1 +1,1 @@
-# Web-pratice
+# Web-practice
